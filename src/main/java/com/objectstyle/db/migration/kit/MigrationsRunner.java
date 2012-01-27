@@ -6,7 +6,7 @@ import com.carbonfive.db.migration.MigrationResolver;
 import com.carbonfive.db.migration.ResourceMigrationResolver;
 
 public class MigrationsRunner {
-    private static final String[] DEFAULT_MIGRATION_PATHS = {"/db/migrations"};
+    private static final String[] DEFAULT_MIGRATION_PATHS = {"classpath:/db/migrations"};
 
     public static void main(String[] args) {
         DriverManagerMigrationManager migrationManager = createMigrationManager();
