@@ -24,6 +24,14 @@
         </repository>
     </repositories>
 
+    <distributionManagement>
+        <repository>
+            <id>objectstyle-releases</id>
+            <name>objectstyle-releases</name>
+            <url>http://maven.objectstyle.com/content/repositories/oc-releases</url>
+        </repository>
+    </distributionManagement>
+
     <scm>
         <url>https://github.com/aveprev/db-migration-kit</url>
         <connection>scm:git:git://github.com/aveprev/db-migration-kit.git</connection>
