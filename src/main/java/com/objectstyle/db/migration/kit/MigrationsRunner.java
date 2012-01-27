@@ -28,7 +28,7 @@ public class MigrationsRunner {
     private static String[] getMigrationPaths() {
         String[] migrationPaths = DEFAULT_MIGRATION_PATHS;
         String migrationPathsStr = System.getProperty("paths");
-        if (migrationPaths != null) {
+        if (migrationPathsStr != null) {
             migrationPaths = migrationPathsStr.split(":");
             for (int i = 0; i < migrationPaths.length; i++) {
                 String path = "classpath:" + migrationPaths[i].trim();
